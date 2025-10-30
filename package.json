@@ -1,0 +1,27 @@
+{
+  "name": "premium-unsplash-gallery",
+  "version": "1.0.0",
+  "description": "A stunning, feature-rich image gallery powered by Unsplash API",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "gallery",
+    "unsplash",
+    "images",
+    "photography",
+    "pwa"
+  ],
+  "author": "Premium Gallery",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/premium-gallery"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/premium-gallery/issues"
+  },
+  "homepage": "https://imagegallery-io.netlify.app"
+}

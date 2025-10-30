@@ -1,0 +1,4 @@
+Contact: mailto:dippan.connect@gmail.com
+Expires: 2026-10-30T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://imagegallery-io.netlify.app/.well-known/security.txt

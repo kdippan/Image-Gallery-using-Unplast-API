@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Primary Manifest -->
+<link rel="manifest" href="/site.webmanifest">
+<!-- Alternative Manifest -->
+<link rel="alternate" type="application/manifest+json" href="/manifest.json">
+<!-- Windows Config -->
+<meta name="msapplication-config" content="/browserconfig.xml">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- Android Chrome Icons -->
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+<!-- Web App Manifest -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Theme Colors for Mobile Browsers -->
+<meta name="theme-color" content="#667eea">
+<meta name="msapplication-TileColor" content="#667eea">
+
+<!-- Apple Mobile Web App Settings -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gallery">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="ai:title" content="Premium Gallery - Free High-Quality Stock Photo Gallery">
+<meta name="ai:description" content="Premium Gallery is a curated image gallery featuring millions of professional, high-quality stock photos from Unsplash. Users can search, browse by category (Nature, Architecture, People, Travel, Technology, Food, Animals, Fashion), save favorites, and download images for free. The gallery includes advanced search, infinite scroll, dark/light themes, and PWA support for offline access.">
+<meta name="ai:category" content="Photography, Stock Photos, Image Gallery, Web Application">
+<meta name="ai:features" content="Free stock photos, Advanced search, Category filters, Favorites system, Dark/Light theme, Progressive Web App, Offline support, High-quality downloads, Infinite scroll, Responsive design">
+<meta name="ai:use-cases" content="Finding stock photos, Downloading free images, Browsing photography collections, Searching specific image types, Building mood boards, Finding inspiration, Desktop wallpapers, Creative projects">
+<meta name="ai:target-audience" content="Photographers, Designers, Content creators, Bloggers, Marketers, Students, Creative professionals, Web developers">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover stunning, high-quality photography from around the world. Browse, search, and download beautiful images powered by Unsplash API.">
+    <meta name="keywords" content="photography, images, photos, unsplash, gallery, high-quality, free images">
+    <meta name="author" content="Dippan Bhusal">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Premium Unsplash Gallery - Discover Stunning Photography">
+    <meta property="og:description" content="Browse the world's most beautiful, curated photography collection">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542831371-29b0f74f9713">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Unsplash Gallery">
+    <meta name="twitter:description" content="Discover stunning photography from around the world">
+
+    <title>Premium Unsplash Gallery - Discover Stunning Photography</title>
+
+    <!-- Preconnect to Unsplash API for faster loading -->
+    <link rel="preconnect" href="https://api.unsplash.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+      <!-- Windows/IE11/Edge Browser Config -->
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- ========== THEME COLORS ========== -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#667eea">
+
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#667eea">
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#667eea">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-TileImage" content="/android-chrome-512x512.png">
+    <meta name="msapplication-square70x70logo" content="/favicon-32x32.png">
+    <meta name="msapplication-square150x150logo" content="/android-chrome-192x192.png">
+    <meta name="msapplication-wide310x150logo" content="/android-chrome-512x512.png">
+    <meta name="msapplication-square310x310logo" content="/android-chrome-512x512.png">
+
+    <!-- ========== APPLE MOBILE WEB APP ========== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Gallery">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- ========== MOBILE WEB APP TAGS ========== -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Premium Gallery">
+
+    <!-- ========== CANONICAL URL ========== -->
+    <link rel="canonical" href="https://imagegallery-io.netlify.app/">
+
+    <!-- ========== PRECONNECT FOR PERFORMANCE ========== -->
+    <link rel="preconnect" href="https://api.unsplash.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://api.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Premium Gallery",
+      "url": "https://imagegallery-io.netlify.app/",
+      "description": "Discover stunning, high-quality photography from around the world",
+      "applicationCategory": "Multimedia",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "screenshot": "https://imagegallery-io.netlify.app/android-chrome-512x512.png",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+      }
+    }
+    </script>
+     <meta name="language" content="English">
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="United States">
+    <link rel="alternate" hreflang="en" href="https://imagegallery-io.netlify.app/">
+    <link rel="alternate" hreflang="x-default" href="https://imagegallery-io.netlify.app/">
+
+   
+</head>
+<body class="dark-theme">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loader-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="35" stroke="url(#gradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="164.93 164.93" class="loading-circle"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="loading-text">Loading Gallery</h2>
+            <p class="loading-subtitle">Preparing stunning visuals for you...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="/favicon.ico/favicon.ico"class="logo-icon">
+                    <rect width="32" height="32" rx="8" fill="url(#logoGradient)"/>
+                    <path d="M10 16L14 20L22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" style="stop-color:#6c63ff"/>
+                            <stop offset="100%" style="stop-color:#ec4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">PremiumGallery</span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search stunning images..." aria-label="Search images">
+                <button id="clearSearch" class="clear-search" aria-label="Clear search" style="display: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button id="favoritesToggle" class="icon-button" aria-label="View favorites" title="Favorites">
+                    <i data-lucide="heart"></i>
+                    <span id="favoritesCount" class="badge">0</span>
+                </button>
+                <button id="themeToggle" class="icon-button" aria-label="Toggle theme" title="Toggle Theme">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Stunning Photography</h1>
+            <p class="hero-subtitle">Explore the world's largest collection of high-quality, curated images</p>
+            <div class="scroll-indicator">
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Bar -->
+    <div id="categoryBar" class="category-bar">
+        <div class="category-container">
+            <button class="category-pill active" data-category="">
+                <i data-lucide="grid"></i>
+                <span>All</span>
+            </button>
+            <button class="category-pill" data-category="nature">
+                <i data-lucide="tree-pine"></i>
+                <span>Nature</span>
+            </button>
+            <button class="category-pill" data-category="architecture">
+                <i data-lucide="building-2"></i>
+                <span>Architecture</span>
+            </button>
+            <button class="category-pill" data-category="people">
+                <i data-lucide="users"></i>
+                <span>People</span>
+            </button>
+            <button class="category-pill" data-category="travel">
+                <i data-lucide="plane"></i>
+                <span>Travel</span>
+            </button>
+            <button class="category-pill" data-category="technology">
+                <i data-lucide="cpu"></i>
+                <span>Technology</span>
+            </button>
+            <button class="category-pill" data-category="food">
+                <i data-lucide="utensils"></i>
+                <span>Food</span>
+            </button>
+            <button class="category-pill" data-category="animals">
+                <i data-lucide="paw-print"></i>
+                <span>Animals</span>
+            </button>
+            <button class="category-pill" data-category="fashion">
+                <i data-lucide="shirt"></i>
+                <span>Fashion</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Results Info -->
+        <div id="resultsInfo" class="results-info" style="display: none;">
+            <p id="resultsText"></p>
+        </div>
+
+        <!-- Image Gallery Grid -->
+        <div id="gallery" class="gallery"></div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading more images...</p>
+        </div>
+
+        <!-- Load More Button -->
+        <div id="loadMoreContainer" class="load-more-container" style="display: none;">
+            <button id="loadMoreBtn" class="load-more-btn">
+                <i data-lucide="arrow-down"></i>
+                <span>Load More Images</span>
+            </button>
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <div class="empty-icon">
+                <i data-lucide="image-off"></i>
+            </div>
+            <h3 class="empty-title">No images found</h3>
+            <p class="empty-message">Try adjusting your search or browse different categories</p>
+            <button id="resetSearch" class="primary-btn">
+                <i data-lucide="refresh-cw"></i>
+                <span>Reset Search</span>
+            </button>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state" style="display: none;">
+            <div class="error-icon">
+                <i data-lucide="alert-circle"></i>
+            </div>
+            <h3 class="error-title">Oops! Something went wrong</h3>
+            <p id="errorMessage" class="error-message">Unable to load images. Please try again.</p>
+            <button id="retryBtn" class="primary-btn">
+                <i data-lucide="refresh-cw"></i>
+                <span>Retry</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <!-- Close Button -->
+            <button id="closeLightbox" class="lightbox-close" aria-label="Close lightbox">
+                <i data-lucide="x"></i>
+            </button>
+
+            <!-- Navigation Arrows -->
+            <button id="prevImage" class="lightbox-nav lightbox-prev" aria-label="Previous image">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <button id="nextImage" class="lightbox-nav lightbox-next" aria-label="Next image">
+                <i data-lucide="chevron-right"></i>
+            </button>
+
+            <!-- Image Container -->
+            <div class="lightbox-image-container">
+                <img id="lightboxImage" src="" alt="" class="lightbox-image">
+            </div>
+
+            <!-- Info Bar -->
+            <div class="lightbox-info">
+                <div class="lightbox-photographer">
+                    <img id="lightboxPhotographerAvatar" src="" alt="" class="photographer-avatar">
+                    <div class="photographer-details">
+                        <p class="photographer-label">Photo by</p>
+                        <a id="lightboxPhotographerLink" href="" target="_blank" rel="noopener noreferrer" class="photographer-name"></a>
+                    </div>
+                </div>
+                <div class="lightbox-actions">
+                    <button id="lightboxFavorite" class="lightbox-action-btn" aria-label="Add to favorites" title="Favorite">
+                        <i data-lucide="heart"></i>
+                    </button>
+                    <button id="lightboxCopyLink" class="lightbox-action-btn" aria-label="Copy link" title="Copy Link">
+                        <i data-lucide="link"></i>
+                    </button>
+                    <button id="lightboxDownload" class="lightbox-action-btn lightbox-download-btn" aria-label="Download image" title="Download">
+                        <i data-lucide="download"></i>
+                        <span>Download</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                Powered by 
+                <a href="https://unsplash.com/?utm_source=premium_gallery&utm_medium=referral" target="_blank" rel="noopener noreferrer" class="footer-link">Unsplash</a>
+            </p>
+            <div class="footer-links">
+                <a href="https://unsplash.com/terms" target="_blank" rel="noopener noreferrer" class="footer-link">Terms</a>
+                <span class="footer-divider">•</span>
+                <a href="https://unsplash.com/privacy" target="_blank" rel="noopener noreferrer" class="footer-link">Privacy</a>
+                <span class="footer-divider">•</span>
+                <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" class="footer-link">License</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="/main_part.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

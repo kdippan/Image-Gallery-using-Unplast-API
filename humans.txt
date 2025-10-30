@@ -1,0 +1,26 @@
+/* TEAM */
+
+Developer: Premium Gallery Team
+Site: https://imagegallery-io.netlify.app
+Location: Worldwide
+
+/* THANKS */
+
+Unsplash: https://unsplash.com
+    For providing amazing free stock photos API
+
+Lucide Icons: https://lucide.dev
+    For beautiful open-source icons
+
+Google Fonts: https://fonts.google.com
+    For Inter and Poppins fonts
+
+/* SITE */
+
+Last update: 2025/10/30
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Progressive Web App, Service Worker
+Software: VS Code, Git, Netlify
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code

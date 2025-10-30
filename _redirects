@@ -1,0 +1,11 @@
+# Netlify Redirects and Rewrites
+# Premium Unsplash Gallery
+
+# Force HTTPS
+http://imagegallery-io.netlify.app/*  https://imagegallery-io.netlify.app/:splat  301!
+
+# SPA fallback - all routes to index.html
+/*    /index.html   200
+
+# Custom 404 page (optional - uncomment if you create 404.html)
+# /*    /404.html    404

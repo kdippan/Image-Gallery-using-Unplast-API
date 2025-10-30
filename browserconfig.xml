@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/favicon-32x32.png"/>
+            <square150x150logo src="/android-chrome-192x192.png"/>
+            <square310x310logo src="/android-chrome-512x512.png"/>
+            <wide310x150logo src="/android-chrome-512x512.png"/>
+            <TileColor>#667eea</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="https://imagegallery-io.netlify.app/notifications/1"/>
+            <polling-uri2 src="https://imagegallery-io.netlify.app/notifications/2"/>
+            <polling-uri3 src="https://imagegallery-io.netlify.app/notifications/3"/>
+            <polling-uri4 src="https://imagegallery-io.netlify.app/notifications/4"/>
+            <polling-uri5 src="https://imagegallery-io.netlify.app/notifications/5"/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+        <badge>
+            <polling-uri src="https://imagegallery-io.netlify.app/badge/1"/>
+            <frequency>30</frequency>
+        </badge>
+    </msapplication>
+</browserconfig>
